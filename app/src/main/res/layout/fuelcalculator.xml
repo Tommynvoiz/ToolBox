@@ -1,0 +1,163 @@
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/container"
+    tools:context="com.example.tomas.myapplication.FuelCalculator"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:textSize="30sp"
+            android:background="#898989"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/hello_world1" />
+
+        <TextView
+            style="@style/TextColor"
+            android:id="@+id/distanceTextView"
+            android:text="@string/distance_text_view"
+            />
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <EditText
+            style="@style/TextColor"
+            android:id="@+id/kmEditText"
+            android:layout_below="@+id/distanceTextView"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/km_edit_view"
+            android:layout_alignRight="@+id/litersEditText"
+            android:layout_alignEnd="@+id/litersEditText"
+            android:layout_width="108dp" />
+
+
+        <TextView
+            android:id="@+id/kmTextView"
+            style="@style/TextColor"
+            android:layout_alignBottom="@+id/kmEditText"
+            android:layout_toRightOf="@+id/kmEditText"
+            android:text="@string/km_text_view"
+            android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/TextColor"
+            android:id="@+id/fuelTextView"
+            android:layout_alignLeft="@+id/kmEditText"
+            android:layout_below="@+id/kmEditText"
+            android:layout_marginTop="22dp"
+            android:text="@string/fuel_text_view"
+            android:layout_alignRight="@+id/litersEditText"
+            android:layout_alignEnd="@+id/litersEditText" />
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/TextColor"
+            android:id="@+id/litersEditText"
+            android:layout_below="@+id/fuelTextView"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/liters_edit_view"
+            android:layout_alignRight="@+id/button"
+            android:layout_alignEnd="@+id/button"
+            android:layout_width="127dp" />
+
+        <TextView
+            style="@style/TextColor"
+            android:id="@+id/litrosTextView"
+            android:layout_alignBottom="@+id/litersEditText"
+            android:layout_toRightOf="@+id/litersEditText"
+            android:text="@string/liters_text_view" />
+
+    </LinearLayout>
+
+        <TextView
+            style="@style/TextColor"
+            android:id="@+id/finalTextView"
+            android:text="@string/final1_text_view"
+            android:layout_below="@+id/litersEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="46dp" />
+
+        <EditText
+            style="@style/TextColor"
+            android:id="@+id/editText1"
+            android:layout_below="@+id/finalTextView"
+            android:ems="10"
+            android:textSize="90sp"
+            android:inputType="numberDecimal"
+            android:text="@string/l_edit_view"
+            android:layout_toLeftOf="@+id/button1"
+            android:layout_toStartOf="@+id/button1" />
+
+        <TextView
+            style="@style/TextColor"
+            android:id="@+id/lTextView"
+            android:textSize="30sp"
+            android:text="@string/l_text_view"
+            android:layout_above="@+id/button"
+            android:layout_toRightOf="@+id/editText1"
+            android:layout_toEndOf="@+id/editText1" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#898989"
+            android:layout_marginTop="49dp"
+            android:text="@string/button_view"
+            android:layout_below="@+id/editText1"
+            android:layout_toRightOf="@+id/distanceTextView"
+            android:layout_toEndOf="@+id/distanceTextView" />
+
+
+
+        <Button
+            android:id="@+id/button1"
+            android:background="#898989"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_view1"
+            android:layout_alignTop="@+id/button"
+            android:layout_toRightOf="@+id/litrosTextView"
+            android:layout_toEndOf="@+id/litrosTextView" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+

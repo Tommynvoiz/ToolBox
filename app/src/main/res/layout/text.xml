@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCommands"
+        android:hint= "Type a Command"
+        android:password="true"
+     />
+
+    <LinearLayout android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_weight="25"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Try Command"
+        android:id="@+id/bResult" />
+    <ToggleButton
+        android:layout_weight="75"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:id="@+id/tbPassword" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Invalid"
+        android:gravity="center"
+        android:id="@+id/tvResults" />
+
+
+</LinearLayout>
