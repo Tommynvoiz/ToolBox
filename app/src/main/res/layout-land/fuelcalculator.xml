@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:text="@string/distance_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="31dp" />
+
+
+    <EditText
+        android:id="@+id/kmEditText"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/km_edit_view"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distanceTextView"
+        android:layout_alignStart="@+id/distanceTextView" />
+
+
+    <TextView
+        android:id="@+id/kmTextView"
+        android:layout_alignBottom="@+id/kmEditText"
+        android:layout_toRightOf="@+id/kmEditText"
+        android:text="@string/km_text_view"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/fuelTextView"
+        android:layout_marginTop="28dp"
+        android:text="@string/fuel_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kmEditText"
+        android:layout_alignStart="@+id/kmEditText" />
+
+    <EditText
+        android:id="@+id/litersEditText"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/liters_edit_view"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fuelTextView"
+        android:layout_alignStart="@+id/fuelTextView" />
+
+    <TextView
+        android:id="@+id/litrosTextView"
+        android:layout_alignBottom="@+id/litersEditText"
+        android:layout_toRightOf="@+id/litersEditText"
+        android:text="@string/liters_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/finalTextView"
+        android:text="@string/final1_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_toEndOf="@+id/litrosTextView" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:ems="10"
+        android:textSize="90sp"
+        android:inputType="numberDecimal"
+        android:text="@string/l_edit_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/litrosTextView"
+        android:layout_toEndOf="@+id/finalTextView" />
+
+    <TextView
+        android:id="@+id/lTextView"
+        android:textSize="30sp"
+        android:text="@string/l_text_view"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lTextView">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#898989"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="@string/button_view" />
+
+    <Button
+        android:id="@+id/button1"
+        android:background="#898989"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view1" />
+    </LinearLayout>
+
+</RelativeLayout>

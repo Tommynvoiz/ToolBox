@@ -50,6 +50,10 @@
             android:name=".FuelCalculator"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".AboutApps"
+            android:label="@string/app_name" >
+        </activity>
 
     </application>
 

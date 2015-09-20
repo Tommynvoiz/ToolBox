@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">My Application</string>
+    <string name="app_name">Toolbox</string>
     <string name="hello_world">Your Total is 0</string>
     <string name="action_settings">Settings</string>
 
@@ -31,5 +31,30 @@
     <string name="l_text_view">Liters</string>
     <string name="l_edit_view">0.0</string>
 
-    <string name="hello_world1">How Far You Go?</string>
+    <string name="headtext">Tools</string>
+
+
+    <string-array name="title">
+        <item>Counter</item>
+        <item>Tip Calculator</item>
+        <item>Fuel Calculator</item>
+        <item>Password Game</item>
+        <item>Color Change</item>
+    </string-array>
+
+    <array name="description">
+        <item>Sum And subtract.
+            Very handly when you need keep count of mercandise or somthing else</item>
+        <item>Calculate tip and split the bill with this incredible tool- the ultimate tip calculator!
+            This tip calculator app not only calculates tip quickly and easily but also helps to split the bill between any number of people.
+            Round up or round down on any value on the tip calculator and see changes to the tip percentage, tip amount, total amount and amount payable immediately!</item>
+        <item>The useful application “Fuel Calculator” was created specially for drivers.
+            This app will help you to calculate:
+            - fuel consumption of your car;
+            - fuel cost and fuel volume, necessary for trip;</item>
+        <item>Do you have trouble remembering your passwords and private information? Do you use the same password for every site? Do you want to protect your private files? If so, you need Keeper.</item>
+        <item>Pick your color
+            Learning colors for kids” is a simple and exciting learning game for the youngest children. It will introduce the amazing colors of our world to your baby, with the educational process being funny and excessively interesting. With no effort, toddlers will learn to name colors, and to associate them with different objects like fruits and animals.</item>
+
+    </array>
 </resources>

@@ -15,7 +15,7 @@
         android:orientation="vertical"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
@@ -29,9 +29,8 @@
         android:orientation="vertical"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/background3"
-        android:layout_alignParentStart="true">
+        android:layout_alignTop="@+id/background3"
+        android:layout_alignParentEnd="true">
 
     </LinearLayout>
 
@@ -43,9 +42,8 @@
         android:orientation="vertical"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/background1"
-        android:layout_alignParentStart="true">
+        android:layout_alignTop="@+id/background1"
+        android:layout_centerHorizontal="true">
 
     </LinearLayout>
 
@@ -54,9 +52,9 @@
         android:layout_height="wrap_content"
         android:text="Pick a Color"
         android:layout_gravity="center"
-        android:id="@+id/bGreen"
-        android:layout_alignTop="@+id/background1"
-        android:layout_toEndOf="@+id/background3" />
+        android:id="@+id/bBlue"
+        android:layout_above="@+id/button"
+        android:layout_alignEnd="@+id/background2" />
 
     <Button
         android:layout_width="wrap_content"
@@ -64,17 +62,17 @@
         android:text="Pick a Color"
         android:id="@+id/bRed"
         android:layout_gravity="center"
-        android:layout_alignTop="@+id/background3"
-        android:layout_alignStart="@+id/bGreen" />
+        android:layout_above="@+id/button"
+        android:layout_alignStart="@+id/background3" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pick a Color"
-        android:id="@+id/bBlue"
+        android:id="@+id/bGreen"
         android:layout_gravity="center"
-        android:layout_alignTop="@+id/background2"
-        android:layout_toEndOf="@+id/background2" />
+        android:layout_above="@+id/button"
+        android:layout_alignStart="@+id/background1" />
 
     <Button
         android:layout_width="match_parent"
@@ -85,7 +83,7 @@
         android:layout_gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
-
+    
 
 
 </RelativeLayout>

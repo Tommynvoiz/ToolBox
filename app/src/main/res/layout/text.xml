@@ -6,6 +6,14 @@
     android:layout_width="match_parent" 
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password test"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

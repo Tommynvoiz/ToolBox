@@ -10,15 +10,15 @@ import android.content.Intent;
  */
 public class Splash extends Activity {
 
-    MediaPlayer ourSong;
+    MediaPlayer mySong;
 
     @Override
     protected void onCreate(Bundle anyName){
         // TODO Auto-generated method stub
         super.onCreate(anyName);
         setContentView(R.layout.splash);
-        ourSong = MediaPlayer.create(Splash.this, R.raw.wahwah);
-        ourSong.start();
+        mySong = MediaPlayer.create(Splash.this, R.raw.wahwah);
+        mySong.start();
         Thread timer = new Thread(){
             public void run(){
                 try{
@@ -36,7 +36,7 @@ public class Splash extends Activity {
     @Override
     protected void onPause(){
         super.onPause();
-        ourSong.release();
+        mySong.release();
         finish();
     }
 }

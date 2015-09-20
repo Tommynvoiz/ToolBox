@@ -10,11 +10,19 @@
     tools:context="com.example.tomas.myapplication.TipCalculator" >
 
     <TextView
+        android:id="@+id/billlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="22dp"
+        android:text="Check your Bill" />
+    <TextView
         android:id="@+id/billTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/billlabel"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginLeft="23dp"
         android:layout_marginTop="22dp"
         android:text="@string/bill_text_view" />
@@ -99,9 +107,9 @@
         android:id="@+id/changeTipSeekBar1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/finalBillEditText"
         android:progress="15"
-        android:layout_toLeftOf="@+id/tipTextView"
+        android:layout_alignBottom="@+id/finalBillEditText"
+        android:layout_alignStart="@+id/changeTipTextView"
         android:layout_toStartOf="@+id/tipTextView" />
 
 </RelativeLayout>
